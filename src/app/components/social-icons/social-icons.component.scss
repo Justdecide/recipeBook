@@ -1,0 +1,23 @@
+@import './src/mixins.scss';
+.navigation-box {
+    list-style: none;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto-fit(max-content);
+    grid-column-gap: 1em;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+.social__icon {
+    align-items: center;
+    height: 1rem;
+    width: 1rem;
+    transition: transform .3s, fill .2s;
+    fill: var(--color-gray-lighten-t);
+}
+
+.social__icon:hover {
+    transform: translateY(-2px);
+    fill: var(--color-gray-light);
+}

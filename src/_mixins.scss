@@ -1,0 +1,37 @@
+// Colors
+$color-primary:#2D4059;
+$color-secondary: #EA5455;
+$color-secondary-dark: #F07B3F;
+$color-secondary-light: #FFD460;
+$color-gray-light: #f7f7f7;
+$color-gray-dark:#202632;
+// MEDIA QUERY MANAGER
+
+/*
+0-600px: normal styles aply
+600px: tablet portrait
+900px: tablet landscape
+1200px: desktop
+1800px: big desktop
+*/
+
+@mixin respond-tablet {
+    @media(min-width: 600px) {
+        @content
+    }
+    ;
+}
+
+@mixin respond-tablet-landscape {
+    @media(min-width: 900px) {
+        @content
+    }
+    ;
+}
+
+@mixin respond-desktop {
+    @media(min-width: 1200px) {
+        @content
+    }
+    ;
+}

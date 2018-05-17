@@ -1,0 +1,46 @@
+@import './src/mixins.scss';
+:root {
+    --color-gray-light: #f7f7f7;
+    --color-gray-dark: #202632;
+    --color-gray-light-t: rgba(230, 233, 238, 0.1);
+    --color-gray-lighten-t: rgba(230, 233, 238, 0.9);
+    --color-gray-dark-t: rgba(32, 38, 50, 0.50);
+    --color-gray-darkness-t: rgba(32, 38, 50, 0.80);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16pt;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    line-height: 1.6;
+}
+
+a:link,
+a:visited {
+    color: var(--color-gray-light);
+    list-style: none;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: $color-secondary-light;
+    list-style: none;
+    text-decoration: none;
+}
