@@ -4,21 +4,21 @@
             <div class="filter">
                 <div class="header-box">
                     <a class="mobile-nav-icon">
-                        <svg id="icon-menu" class="icon">
+                        <svg id="icon-menu" (click)="show = !show" class="icon">
                           <use xlink:href="/assets/icons/sprite.svg#icon-menu"></use>
                   </svg>
                     </a>
                     <div class="logo-container">
                         <img src="/assets/logo-ex.png" alt="Ejemplo de logo">
                     </div>
-                    <div class="menu-social">
+                    <div *ngIf="show" class="menu-social">
                         <nav>
                             <ul>
                                 <li><a href="#">Recetas</a></li>
                                 <li><a href="#">Acerca de</a></li>
                             </ul>
                         </nav>
-                        <app-social-icons>
+                        <app-social-icons class="social-icons">
                         </app-social-icons>
                     </div>
                 </div>
